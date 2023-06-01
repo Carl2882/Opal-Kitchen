@@ -36,7 +36,7 @@ export default function MenuItem(props: MenuItemProps) {
     return <div className="container">
         <div className="product" >{menu.item}</div>
         <div  aria-hidden="true" className="price">$ {selectedOption?.price.toFixed(2)}</div>
-        <div className="sizes"><h3>Size:</h3>
+        <div className="sizes"><h5>Size:</h5>
         <div className="sizeArea"><ul className="sizeArea">
   {menu.options.map(option => (
     <li
@@ -55,13 +55,15 @@ export default function MenuItem(props: MenuItemProps) {
         </div>
         <div className="bottom">
             <button className="addBtn" onClick={_addToCart} disabled={!selectedOption}>Add to cart</button>
-            <input className="input" value={quantity}
+            <label htmlFor="quantity">Quantity
+            <input id="quantity" className="input" value={quantity}
                    onChange={e => setQuantity(e.target.valueAsNumber)}
                    min={1}
                    step={1}
                    type='number'
                    name='quantity'
             />
+            </label>
         </div>
     </div>
 }

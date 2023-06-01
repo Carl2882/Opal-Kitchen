@@ -8,9 +8,10 @@ body {
   width: 700px;
   height: 300px;
   padding: 5px 20px;
-  background-color: whitesmoke;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #DAEFF0;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
+  box-shadow: 5px 10px gainsboro;
 }
 
 .product {
@@ -30,11 +31,16 @@ body {
 }
 
 .sizeButton {
-  background-color: #88959d;
+  background-color: white;
   color: black;
   border: none;
-  padding: 5px 20px;
-  border-radius: 3px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.sizeButton:active{
+  background-color: #798B8C;
+
 }
 
 .sizeButton:hover,
@@ -48,14 +54,16 @@ body {
 
 .bottom {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
 .input {
   width: 45px;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
 
 ul{
@@ -64,7 +72,7 @@ ul{
 
 .addBtn {
   color: black;
-  background-color: #88959d;
+  background-color: #FCAF8C;
   padding: 8px 10px;
   border-radius: 3px;
   width: 150px;
@@ -75,10 +83,17 @@ ul{
   text-align: center;
   font-size: 3rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #88959d;
+  background-color: whitesmoke;
   height: 70px;
   
   margin: auto;
+}
+
+.title{
+  text-decoration: none;
+  padding-top: 5px;
+  color: black;
+  text-decoration-line:
 }
 
 table {
@@ -86,6 +101,16 @@ table {
   width: 500px;
   margin: auto;
   margin-top: 15px;
+  background-color: #DAEFF0;
+  line-height: normal;
+  border-radius: 10px;
+}
+
+th{
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  
 }
 
 .total {
@@ -102,7 +127,8 @@ table {
   font-size: 2rem;
 }
 
-td {
+
+td,tr {
   text-align: center;
   padding: 10px;
 }
@@ -129,7 +155,7 @@ td {
   width: 250px;
   margin: 10px auto;
   padding: 8px 20px;
-  background-color: #88959d;
+  background-color: #FCAF8C;
   border-radius: 3px;
   border: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -155,8 +181,8 @@ td {
 
 .notification .badge {
   position: absolute;
-  top: -15px;
-  right: -410px;
+  top: 1px;
+  right: -235px;
   padding: 5px 10px;
   border-radius: 50%;
   background: gray;
@@ -166,8 +192,8 @@ td {
 .cart {
   font-size: 20px;
   position: absolute;
-  margin-left: 380px;
-  top: -4px;
+  margin-left: 305px;
+  top: 19px;
 }
 
 .badge {
@@ -181,4 +207,5 @@ td {
   padding: 10px 30px;
   border-radius: 15px;
 }
+
 

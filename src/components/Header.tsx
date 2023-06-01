@@ -9,12 +9,14 @@ export default function Header() {
     <header>
       <div className="Top">
         <NavLink to="/checkout">
+       
           <div className="notification">
+          <div className="title"><h1>Menu Items</h1></div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
+              width="35"
+              height="35"
+              fill="#FCAF8C"
               className="cart"
               viewBox="0 0 16 16"
             >
@@ -24,6 +26,7 @@ export default function Header() {
             <span className="badge">{items.length}</span>
           </div>
         </NavLink>
+        
       </div>
     </header>
   );
